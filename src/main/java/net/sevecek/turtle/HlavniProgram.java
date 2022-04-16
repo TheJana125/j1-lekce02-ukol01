@@ -2,6 +2,8 @@ package net.sevecek.turtle;
 
 import net.sevecek.turtle.engine.*;
 
+import java.awt.*;
+
 public class HlavniProgram {
 
     public void main(String[] args) {
@@ -75,7 +77,78 @@ public class HlavniProgram {
       nakresliDomecek(zofka);
 
 
+      zofka.penUp();
+      zofka.turnLeft(135);
+      zofka.move(280);
+      zofka.turnLeft(90);
+      zofka.move(250);
+      zofka.turnRight(90);
+      zofka.setPenColor(Color.green);
 
+
+        nakresliJ(zofka);
+        nakresliA(zofka);
+        nakresliN(zofka);
+        nakresliA(zofka);
+
+
+
+    }
+
+    private void nakresliN(Turtle zofka) {
+        zofka.penDown();
+        zofka.move(100);
+        zofka.turnRight(145);
+        zofka.move(120);
+        zofka.turnLeft(145);
+        zofka.move(100);
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(20);
+        zofka.turnRight(90);
+        zofka.move(100);
+        zofka.turnRight(180);
+    }
+
+    private void nakresliJ(Turtle zofka) {
+        zofka.move(12);
+        zofka.penDown();
+        zofka.turnRight(135);
+        zofka.move(17);
+        zofka.turnLeft(45);
+        zofka.move(25);
+        zofka.turnLeft(45);
+        zofka.move(17);
+        zofka.turnLeft(45);
+        zofka.move(89);
+        zofka.turnLeft(90);
+        zofka.move(50);
+        zofka.penUp();
+        zofka.turnLeft(180);
+        zofka.move(70);
+        zofka.turnRight(90);
+        zofka.move(100);
+        zofka.turnRight(180);
+    }
+
+    private void nakresliA(Turtle zofka) {
+        zofka.penDown();
+        zofka.turnRight(20);
+        zofka.move(105);
+        zofka.turnRight(140);
+        zofka.move(105);
+        zofka.turnLeft(180);
+        zofka.move(30);
+        zofka.turnLeft(70);
+        zofka.move(48);
+        zofka.penUp();
+        zofka.turnLeft(180);
+        zofka.move(68);
+        zofka.turnRight(70);
+        zofka.move(30);
+        zofka.turnLeft(70);
+        zofka.move(10);
+        zofka.turnLeft(90);
     }
 
     private void nakresliDomecek(Turtle zofka) {
